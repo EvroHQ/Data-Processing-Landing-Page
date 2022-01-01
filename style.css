@@ -933,7 +933,12 @@ input[type="submit"] {
     padding: 0 20px;
     margin: 10px;
   }
+}
 
+@media screen and (max-width: 582px) {
+  .copyright__inner {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1450px) {
@@ -967,7 +972,7 @@ input[type="submit"] {
   .fab {
     font-size: 0.75rem;
   }
-  .copyright__inner {
+    .copyright__inner {
     flex-wrap: wrap;
     flex-direction: column;
   }
