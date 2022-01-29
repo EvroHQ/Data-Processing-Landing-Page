@@ -825,6 +825,41 @@ input[type="submit"] {
   padding: 0 20px;
 }
 
+/* Scroll To Top */
+.scrollToTopBtn {
+  background-color: #ebebeb;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+  text-align: center;
+
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  /* keep it at the top of everything else */
+  z-index: 9999;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease;
+}
+
+.fa-arrow-up {
+  color: #000;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 992px) {
@@ -932,6 +967,9 @@ input[type="submit"] {
     opacity: 1;
     padding: 0 20px;
     margin: 10px;
+  }
+  .scrollToTopBtn {
+    display: none;
   }
 }
 
